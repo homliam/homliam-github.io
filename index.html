@@ -127,7 +127,22 @@
 
 
 
-
+<div id="tp-weather-widget"></div>
+<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+<script>tpwidget("init", {
+    "flavor": "slim",
+    "location": "WTW4X8D1EZCZ",
+    "geolocation": "enabled",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "chameleon",
+    "container": "tp-weather-widget",
+    "bubble": "enabled",
+    "alarmType": "badge",
+    "uid": "UA2075BE57",
+    "hash": "ea611e9e1b65bb019071bebac09ee2bd"
+});
+tpwidget("show");</script>
 
   <title>Z's Hole</title>
   
@@ -139,6 +154,8 @@
 
 
 
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -300,7 +317,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  408 字
+                  453 字
                 </span>
               
 
@@ -338,7 +355,27 @@
 
       
         
-          <p><img src="http://ponc9187g.bkt.clouddn.com/struture.jpg" alt></p>
+          <p><img src="http://ponc9187g.bkt.clouddn.com/struture.jpg" alt><br>
+        <div id="aplayer-GGxVSgXm" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-GGxVSgXm"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "出山",
+              author: "花粥",
+              url: "http://ponc9187g.bkt.clouddn.com/%E5%87%BA%E5%B1%B1.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script></p>
 <center>记录自己在CAD中遇到的问题，避免多次碰到相同的问题重复百度（实时更新）</center>
           <!--noindex-->
           <div class="post-button text-center">
@@ -860,7 +897,7 @@
 <!--# 添加博客全站共：-->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共529字</span>
+  <span class="post-count">博客全站共574字</span>
 </div>
 
         
