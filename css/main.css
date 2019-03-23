@@ -1935,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff8e;
+  background: #416029;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3297,6 +3297,27 @@ h2.love {
 img.img-topic {
   width: 100%;
 }
+.out-img-topic {
+  display: block;
+  max-height: 350px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+img.img-topic {
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
+.posts-expand .post-body img {
+  border: none;
+  padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 0px;
+}
 .post-sticky-flag {
   font-size: inherit;
   float: left;
@@ -3382,7 +3403,7 @@ code.description {
   background: #eee;
 }
 .post-widgets {
-  padding-top: 0px;
+  padding-top: 20px;
 }
 .post-nav {
   margin-top: 30px;
@@ -3419,13 +3440,6 @@ h6 {
   border-left: 4px solid #a166ab;
   margin-left: -36px;
   padding-left: 32px;
-}
-.posts-expand .post-body img {
-  border: none;
-  padding: 0px;
-}
-.post-gallery .post-gallery-img img {
-  padding: 3px;
 }
 code {
   margin: 0px 4px;
