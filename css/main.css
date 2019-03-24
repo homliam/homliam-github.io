@@ -1063,7 +1063,7 @@ pre .javascript .function {
   right: 30px;
   z-index: 1050;
   padding: 0 6px;
-  width: 24px;
+  width: initial;
   background: #222;
   font-size: 12px;
   opacity: 0.6;
@@ -1935,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e5daff;
+  background: #70ded2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3546,6 +3546,13 @@ img:hover {
 .site-state-item {
   padding: 0px 15px;
   border-left: 1.5px solid #a166ab;
+}
+.post {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 @media (max-width: 1023px) {
   .container {
