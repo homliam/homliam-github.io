@@ -1935,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #70ded2;
+  background: #b9f0ba;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3114,7 +3114,7 @@ img:hover {
   color: #b0152f;
 }
 .container {
-  background-color: rgba(57,55,51,0.75);
+  background-color: rgba(210,218,222,0.75);
 }
 .header-inner {
   padding-top: 0px;
@@ -3135,21 +3135,6 @@ img:hover {
 .site-state-item {
   padding: 0px 15px;
   border-left: 1.5px solid #a166ab;
-}
-.feed-link {
-  margin-top: 15px;
-  margin-left: 7px;
-}
-.feed-link a {
-  color: #f7ba3d;
-  border: 1px solid #9e9e9e !important;
-  border-radius: 15px;
-}
-.feed-link a:hover {
-  background-color: #a166ab;
-}
-.feed-link a i {
-  color: #fff;
 }
 .links-of-author {
   margin-top: 0px;
@@ -3300,7 +3285,7 @@ img.img-topic {
 .out-img-topic {
   display: block;
   max-height: 350px;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
   overflow: hidden;
 }
 img.img-topic {
@@ -3311,6 +3296,7 @@ img.img-topic {
   float: right;
   clear: right;
 }
+去掉图片边框,
 .posts-expand .post-body img {
   border: none;
   padding: 0px;
@@ -3529,7 +3515,7 @@ img:hover {
   transform: initial;
 }
 .site-author-name {
-  display: none;
+  display: 10px;
 }
 .site-description {
   letter-spacing: 5px;
