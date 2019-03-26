@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="https://fonts.loli.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="hexo，github,域名，分享,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Z's Hole" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="只需要花费一个小时，便可以在互联网的汪洋里建立属于自己的一方天地，何乐不为？—-记录一次hexo轻量级博客搭建过程。">
+<meta name="keywords" content="hexo，github,域名，分享">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github+域名搭建全过程">
+<meta property="og:url" content="http://yoursite.com/2019/03/26/hexo+github+域名搭建全过程/index.html">
+<meta property="og:site_name" content="Z&#39;s Hole">
+<meta property="og:description" content="只需要花费一个小时，便可以在互联网的汪洋里建立属于自己的一方天地，何乐不为？—-记录一次hexo轻量级博客搭建过程。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1ggjjnf67j20uk0kdq6y.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gciq4yyrj20rl0ef3yo.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gd6dq8elj20zi0fpdn1.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gdce5p51j208206uq2t.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gdrf67uvj20le039mx4.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gdwaccocj20o00gvaaq.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1geovdqqbj207n0hrt8q.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gejlzusrj20vk0dumy9.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gflp0pamj20zh0cr0to.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gfueax17j20l60h4gm8.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1gfsh2v8rj20po0gsmy4.jpg">
+<meta property="og:updated_time" content="2019-03-26T12:34:14.401Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo+github+域名搭建全过程">
+<meta name="twitter:description" content="只需要花费一个小时，便可以在互联网的汪洋里建立属于自己的一方天地，何乐不为？—-记录一次hexo轻量级博客搭建过程。">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/78794689gy1g1ggjjnf67j20uk0kdq6y.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/03/26/hexo+github+域名搭建全过程/">
+
+
+
+<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+<script>tpwidget("init", {
+    "flavor": "bubble",
+    "location": "WTW4X8D1EZCZ",
+    "geolocation": "enabled",
+    "position": "top-right",
+    "margin": "20px 10px",
+    "language": "zh-chs",
+    "unit": "c",
+    "theme": "black",
+    "uid": "UA2075BE57",
+    "hash": "1ac9f7d8b5aa06a9273ad30277fefb39"
+});
+tpwidget("show");</script>
+
+  <title>hexo+github+域名搭建全过程 | Z's Hole</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Z's Hole</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">且食蛤蜊，安问狐狸</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首&emsp;&emsp;页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归&emsp;&emsp;档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/26/hexo+github+域名搭建全过程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="敲代码的绘图员">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Z's Hole">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hexo+github+域名搭建全过程</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-26T20:15:35+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://ww1.sinaimg.cn/large/78794689gy1g1ggjjnf67j20uk0kdq6y.jpg" alt></p>
+<p><center><font color="grey">只需要花费一个小时，便可以在互联网的汪洋里建立属于自己的一方天地，何乐不为？—-记录一次hexo轻量级博客搭建过程。</font></center><br><a id="more"></a></p>
+<h1 id="一、搭建hexo"><a href="#一、搭建hexo" class="headerlink" title="一、搭建hexo"></a>一、搭建hexo</h1><h2 id="1、安装-git"><a href="#1、安装-git" class="headerlink" title="1、安装 git"></a>1、安装 <code>git</code></h2><p>直接在 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git官网</a>下载最新版本的 <code>git</code>，右键安装，安装位置可以自己选，一路 NEXT。</p>
+<h2 id="2、安装最新版本的-nodejs"><a href="#2、安装最新版本的-nodejs" class="headerlink" title="2、安装最新版本的 nodejs"></a>2、安装最新版本的 <code>nodejs</code></h2><p> 同上<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">nodejs官网</a>下载最新版本安装，安装位置一路默认，也可以自己选。 如果没有安装在C盘，必须要自己配置一下环境，否则<code>nodejs</code>会自己配置。安装在非系统盘可以节省C盘空间，作为128G SSD 的我装在了非系统盘，配置过程参考<a href="https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html" target="_blank" rel="noopener">教程</a>，非常详细，一次成功。第一次安装过程中就是</p>
+<h2 id="3、查看-git-和-nodejs-版本，确定是否安装成功。"><a href="#3、查看-git-和-nodejs-版本，确定是否安装成功。" class="headerlink" title="3、查看 git 和 nodejs 版本，确定是否安装成功。"></a>3、查看 <code>git</code> 和 <code>nodejs</code> 版本，确定是否安装成功。</h2><p><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gciq4yyrj20rl0ef3yo.jpg" alt></p>
+<h2 id="4、安装hexo和基本配置"><a href="#4、安装hexo和基本配置" class="headerlink" title="4、安装hexo和基本配置"></a>4、安装hexo和基本配置</h2><ul>
+<li><p>安装hexo </p>
+<p>  直接参照官方文档进行安装，右键点击<code>git bash here</code>，打开git命令行，输入以下命令：</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">npm</span> <span class="selector-tag">install</span> <span class="selector-tag">hexo-cli-g</span></span><br></pre></td></tr></table></figure>
+<p>  在这一步我第一次出现了报错，无法使用npm命令，解决方法是在nodejs安装文件夹下输入上面的命令进行安装。事后分析应该是nodejs没有安装在默认位置，又没有重新配置环境导致的。</p>
+</li>
+<li><p>建立博客主文件夹</p>
+<p>  在自己准备放置博客的位置新建文件夹，我是在F盘根目录下建立的名为<em>blog</em>的文件夹，名称可以自己取。然后切换到<em>blog</em>文件夹，右键打开<code>git bash here</code>输入以下命令初始化博客：</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">init</span></span><br><span class="line"><span class="selector-tag">npm</span> <span class="selector-tag">install</span></span><br></pre></td></tr></table></figure>
+<p>  然后就可以在<code>blog</code>文件夹看到安装的文件。</p>
+</li>
+<li><p>本地运行博客</p>
+<p>  到这一步已经完成了基本安装过程，可以通过<code>localhost</code>查看博客效果了。在<code>git</code>命令行输入以下命令部署到本地：</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">npm</span> <span class="selector-tag">install</span> <span class="selector-tag">hexo-deployer-git</span> <span class="selector-tag">--save</span></span><br><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">s</span> <span class="selector-tag">-g</span></span><br></pre></td></tr></table></figure>
+<p>  然后打开浏览器在网址栏输入：<code>localhost:4000</code> 就可以查看效果<br>  <img src="http://ww1.sinaimg.cn/large/78794689gy1g1gd6dq8elj20zi0fpdn1.jpg" alt> </p>
+</li>
+<li><p>到这一步，hexo已经成功搭建了</p>
+</li>
+</ul>
+<h1 id="二、部署到github"><a href="#二、部署到github" class="headerlink" title="二、部署到github"></a>二、部署到github</h1><h2 id="1、登陆github建立repository，github官网：https-github-com"><a href="#1、登陆github建立repository，github官网：https-github-com" class="headerlink" title="1、登陆github建立repository，github官网：https://github.com/"></a>1、登陆github建立repository，github官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></h2><ul>
+<li>新建项目点击在右上角头像边上的加号然后点击<code>New repository</code>：</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gdce5p51j208206uq2t.jpg" alt></p>
+<ul>
+<li>项目名称和自己的用户名保持一致，建立完成后会有一个   username.github.io*的项目，点开<code>setting</code><br><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gdrf67uvj20le039mx4.jpg" alt><br>点击<code>Choose a theme</code>选择一个主题。<br><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gdwaccocj20o00gvaaq.jpg" alt><br>git代码库已经创建完成<h2 id="2、配置ssh密钥"><a href="#2、配置ssh密钥" class="headerlink" title="2、配置ssh密钥"></a>2、配置ssh密钥</h2>配置ssh密钥可以让本地git项目与远程git项目建立联系，通过git将代码与github进行同步</li>
+<li>创建新的ssh密钥<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ssh-keygen -t rsa -C "your_email@example.com" #( 你的邮箱)，连续点击 Enter 键即可。</span><br><span class="line">#Generating public/private rsa key pair.</span><br><span class="line">#Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter] //推荐使用默认地址</span><br><span class="line"><span class="selector-tag">Enter</span> <span class="selector-tag">passphrase</span> (<span class="selector-tag">empty</span> <span class="selector-tag">for</span> <span class="selector-tag">no</span> <span class="selector-tag">passphrase</span>):</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>​    密码可以直接enter键跳过，也可以输入密码，但是填写密码后每次使用ssh方式推送代码的时候都会要求输入密码，岂不是很烦。而且根据<em>coding</em>的官方文档给出的建议：<code>由于这个 key 也不是用于军事目的，所以也无需设置密码</code></p>
+<h2 id="3、在GitHub账户中添加你的公钥"><a href="#3、在GitHub账户中添加你的公钥" class="headerlink" title="3、在GitHub账户中添加你的公钥"></a>3、在GitHub账户中添加你的公钥</h2><ul>
+<li><p>运行如下命令，将公钥的内容复制到系统粘贴板(clipboard)中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后进登陆 github ，进入<code>setting</code>找到<code>SSH and GPG keys</code> 粘贴刚刚复制的密钥<br><img src="http://ww1.sinaimg.cn/large/78794689gy1g1geovdqqbj207n0hrt8q.jpg" alt></p>
+</li>
+<li><p>下一步进到刚刚创建的<code>usrname.github.io</code>项目中设置链接方式为ssh：<br><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gejlzusrj20vk0dumy9.jpg" alt><br>ssh配置已经完成</p>
+<h2 id="4、测试"><a href="#4、测试" class="headerlink" title="4、测试"></a>4、测试</h2><p>可以输入下面的命令，看看设置是否成功，<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>的部分不要修改：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果是下面的反馈：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host 'github.com (207.97.227.239)' can't be established.</span><br><span class="line"><span class="selector-tag">RSA</span> <span class="selector-tag">key</span> <span class="selector-tag">fingerprint</span> <span class="selector-tag">is</span> 16<span class="selector-pseudo">:27</span><span class="selector-pseudo">:ac</span><span class="selector-pseudo">:a5</span><span class="selector-pseudo">:76</span><span class="selector-pseudo">:28</span><span class="selector-pseudo">:2d</span><span class="selector-pseudo">:36</span><span class="selector-pseudo">:63</span><span class="selector-pseudo">:1b</span><span class="selector-pseudo">:56</span><span class="selector-pseudo">:4d</span><span class="selector-pseudo">:eb</span><span class="selector-pseudo">:df</span><span class="selector-pseudo">:a6</span><span class="selector-pseudo">:48.</span></span><br><span class="line">Are you sure you want to continue connecting (yes/no)?</span><br></pre></td></tr></table></figure></p>
+<p>输入yes完成配置，接下来就是配置用户信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;homliam&quot;//用户名</span><br><span class="line">$ git config --global user.email  &quot;homliam@hotmail.com&quot;//填写自己的邮箱</span><br></pre></td></tr></table></figure></p>
+<p>到此已经完成了SSH配置，本地git也与GitHub取得了联系</p>
+<h2 id="5、部署本地文件至github"><a href="#5、部署本地文件至github" class="headerlink" title="5、部署本地文件至github"></a>5、部署本地文件至github</h2><ul>
+<li>用记事本打开blog站点配置文件，我的是<code>blog\hexo\_config.yml</code>做出如下修改<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># <span class="selector-tag">Deployment</span></span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="selector-tag">deploy</span>:</span><br><span class="line">  <span class="selector-tag">type</span>: <span class="selector-tag">git</span> </span><br><span class="line">  repository: https://github.com/homliam/homliam-github.io </span><br><span class="line">  <span class="selector-tag">branch</span>: <span class="selector-tag">master</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>注意：<em>type</em> <em>repository</em> <em>branch</em> 后面一定要加入一个空格，不然会报错，这个坑太深了。</strong></p>
+<h2 id="6、上传"><a href="#6、上传" class="headerlink" title="6、上传"></a>6、上传</h2><ul>
+<li><p>在hexo文件夹执行：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">clean</span></span><br><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">g</span> <span class="selector-tag">-d</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>假如这时候，报错 ERROR Deployer not found: git，那么就是你的deployer没有安装成功，你需要执行如下命令再安装一次：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>继续执行：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">clean</span></span><br><span class="line"><span class="selector-tag">hexo</span> <span class="selector-tag">g</span> <span class="selector-tag">-d</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>执行完之后会让你输入github的账号和密码，输入完后就可以登录我们自己的部署在Github Pages服务器上的博客了。对应的地址是<code>username.github.io</code>(我的是：homliam.github.io)。<br>到这一步就结束了吗，当然不够，一个高逼格的博客必须要有自己的域名，接下来记录如何添加自己的域名进行访问</li>
+</ul>
+<h1 id="三、配置自己的域名登陆博客"><a href="#三、配置自己的域名登陆博客" class="headerlink" title="三、配置自己的域名登陆博客"></a>三、配置自己的域名登陆博客</h1><h2 id="1、购买域名和解析"><a href="#1、购买域名和解析" class="headerlink" title="1、购买域名和解析"></a>1、购买域名和解析</h2><ul>
+<li>既然是用自己的域名登陆，第一件事情肯定是要购买一个域名，我的域名是在腾讯云购买的，并且已经备案完成<code>homliam.cn</code>建议前往阿里云购买，目前 .top 和 .club 等域名比较便宜，只要几块钱。并且不需要备案。</li>
+<li>购买过程就不概述了，无非就是选一个名字，然后扫码支付即可。</li>
+<li><p>域名买好之后就是解析域名，推荐腾讯云的解析平台  <a href="https://www.dnspod.cn/" target="_blank" rel="noopener">https://www.dnspod.cn/</a> 微信注册登陆即可，并且提前在购买域名的网站修改域名DNS为；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f1g1ns1.dnspod.net</span><br><span class="line">f1g1ns2.dnspod.net</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>登陆后点击域名解析，在域名记录里添加下面两条内容：<br><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gflp0pamj20zh0cr0to.jpg" alt><br>记录值中的usrname改成自己的用户名即可，注意最有有一个. 不过书忘记了也没有关系，网站会自动补全。</p>
+</li>
+</ul>
+<h2 id="2、github设置和新建CNAME文件"><a href="#2、github设置和新建CNAME文件" class="headerlink" title="2、github设置和新建CNAME文件"></a>2、github设置和新建CNAME文件</h2><ul>
+<li>在github项目设置中增加自己的域名，保存。</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gfueax17j20l60h4gm8.jpg" alt></p>
+<ul>
+<li>在博客根目录文件夹下,例如我的D:\blog\source，新建名为CNAME的记事本文件，去掉后缀。在里面输入你的域名，例如我的：homliam.cn 即可，保存并关闭。<br><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gfsh2v8rj20po0gsmy4.jpg" alt></li>
+</ul>
+<p>这时候就可以用自己的域名进行登陆了，例如我的：homliam.cn</p>
+<h1 id="四、结语"><a href="#四、结语" class="headerlink" title="四、结语"></a>四、结语</h1><ul>
+<li>配置过程顺利的话应该都不要一个小时的时间，但是后面的主题配置才是最浪费时间的，只有一个漂亮的、独一无二的主题才是一个个人博客的精髓。在没有一点点的前端基础上，我前后几天花费了大概有4个小时才到了现在这样勉强能看的地步。不过作为一个新手，搭建成功的成就感还是相当棒的。</li>
+<li>主题我用的是目前github上排名第一的<code>NEXT</code>,详细配置我也是参考了几位大牛的经验来完成，还有很多不满意的地方，以后再陆续修改吧。不过暂时是不太想折腾了，由于本人专业并不是程序员，作为一名精装修行业的从业人员，平时工作也是很繁重的，本着<strong>不进则退</strong>的原则，有时间还得累积自己的工作经验和学习新的工作技能，实在没有太多精力投入到页面美化中去了，只能一点一点的来优化。</li>
+<li>今天写下这篇搭建过程，主要是给自己做一个笔记，再回忆一遍搭建思路。如果有幸能被某位网友看到这篇文章，并且借鉴我的经验成功搭建hexo，那便是这篇文章的一点价值吧！</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+
+        
+         <div>    
+          
+          <ul class="post-copyright">
+             <li class="post-copyright-link">
+              <strong>本文作者：</strong>
+              <a href="/" title="欢迎访问 敲代码的绘图员 的个人博客">敲代码的绘图员</a>
+            </li>
+
+            <li class="post-copyright-link">
+              <strong>本文标题：</strong>
+              <a href="http://yoursite.com/2019/03/26/hexo+github+域名搭建全过程/" title="hexo+github+域名搭建全过程">hexo+github+域名搭建全过程</a>
+            </li>
+
+            <li class="post-copyright-link">
+              <strong>本文链接：</strong>
+              <a href="http://yoursite.com/2019/03/26/hexo+github+域名搭建全过程/" title="hexo+github+域名搭建全过程">http://yoursite.com/2019/03/26/hexo+github+域名搭建全过程/</a>
+            </li>
+
+            <li class="post-copyright-date">
+                <strong>发布时间： </strong>2019年3月26日 - 20时03分
+            </li>  
+
+            <li class="post-copyright-license">
+              <strong>版权声明： </strong>
+              本文由 敲代码的绘图员 原创。
+            </li>
+          </ul>
+        
+      </div>
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo，github-域名，分享/" rel="tag"><i class="fa fa-tag"></i> hexo，github,域名，分享</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/22/CAD遇到的坑/" rel="next" title="CAD遇到的坑">
+                <i class="fa fa-chevron-left"></i> CAD遇到的坑
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+<div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------ 本文结束------</div>
+    
+</div>
+    
+ </div>
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpg" alt="敲代码的绘图员">
+            
+              <p class="site-author-name" itemprop="name">敲代码的绘图员</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/homliam" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:homliam@hotmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=58911450" target="_blank" title="网易云">
+                      
+                        <i class="fa fa-fw fa-music"></i>网易云</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/homliam/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、搭建hexo"><span class="nav-number">1.</span> <span class="nav-text">一、搭建hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、安装-git"><span class="nav-number">1.1.</span> <span class="nav-text">1、安装 git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、安装最新版本的-nodejs"><span class="nav-number">1.2.</span> <span class="nav-text">2、安装最新版本的 nodejs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、查看-git-和-nodejs-版本，确定是否安装成功。"><span class="nav-number">1.3.</span> <span class="nav-text">3、查看 git 和 nodejs 版本，确定是否安装成功。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、安装hexo和基本配置"><span class="nav-number">1.4.</span> <span class="nav-text">4、安装hexo和基本配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、部署到github"><span class="nav-number">2.</span> <span class="nav-text">二、部署到github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、登陆github建立repository，github官网：https-github-com"><span class="nav-number">2.1.</span> <span class="nav-text">1、登陆github建立repository，github官网：https://github.com/</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、配置ssh密钥"><span class="nav-number">2.2.</span> <span class="nav-text">2、配置ssh密钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、在GitHub账户中添加你的公钥"><span class="nav-number">2.3.</span> <span class="nav-text">3、在GitHub账户中添加你的公钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、测试"><span class="nav-number">2.4.</span> <span class="nav-text">4、测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、部署本地文件至github"><span class="nav-number">2.5.</span> <span class="nav-text">5、部署本地文件至github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、上传"><span class="nav-number">2.6.</span> <span class="nav-text">6、上传</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、配置自己的域名登陆博客"><span class="nav-number">3.</span> <span class="nav-text">三、配置自己的域名登陆博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、购买域名和解析"><span class="nav-number">3.1.</span> <span class="nav-text">1、购买域名和解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、github设置和新建CNAME文件"><span class="nav-number">3.2.</span> <span class="nav-text">2、github设置和新建CNAME文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、结语"><span class="nav-number">4.</span> <span class="nav-text">四、结语</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">敲代码的绘图员</span>
+
+  
+  <!--# 添加'|'符号-->
+
+  <span class="post-meta-divider">|</span>
+
+<!--# 添加博客全站共：-->
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">全站共2.6k字</span>
+</div>
+</div>
+ <!--# 添加Tip:本站电脑访问体验更佳-->
+
+  <span class="post-meta-divider">Tip:本站电脑访问体验更佳</span>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+<!-- 更改页面线条属性：颜色、透明度、index、数量 -->
+
+<script type="text/javascript" color="0,0,0" opacity="1" zindex="-1" count="180" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
+</html>
