@@ -24,6 +24,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -894,7 +901,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">  <a href="http://www.miitbeian.gov.cn" rel="noopener" target="_blank">鄂ICP备19005317号 </a>&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -1008,12 +1015,6 @@
 
 
 
-  
-    
-    
-  
-  <script color="50,134,70" opacity="0.75" zindex="-1" count="150" src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
-
 
 
 
@@ -1031,6 +1032,8 @@
 
 
 
+  
+
 
 
   
@@ -1047,6 +1050,9 @@
 
   
   <script src="/lib/three/canvas_lines.min.js"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
 
 
   
@@ -1081,6 +1087,34 @@
   
 
   
+  
+  
+
+  
+
+  
+    
+      
+    
+  
+  
+  
+    <script src="/lib/quicklink/dist/quicklink.umd.js"></script>
+    <script>
+      
+        window.addEventListener('load', () => {
+      
+        quicklink({
+          timeout: 3000,
+          priority: true,
+          ignores: [uri => uri.includes('#'),uri => uri == 'https://www.homliam.cn/archives/2019/',]
+        });
+      
+        });
+      
+    </script>
+  
+
 
   
 
@@ -1122,6 +1156,15 @@
   
 
   
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script>
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
 
   
 <script>
