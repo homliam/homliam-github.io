@@ -1897,7 +1897,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #471fff;
+  background: #bb7a5b;
 }
 .feed-link,
 .chat {
@@ -2649,7 +2649,7 @@ header.post-header {
   width: auto !important;
 }
 .container .main-inner {
-  width: 50%;
+  width: 80%;
 }
 .content-wrap {
   width: calc(100% - 260px);
