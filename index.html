@@ -272,7 +272,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">9</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">8</span></a>
 
   </li>
         
@@ -310,7 +310,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">9</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">10</span></a>
 
   </li>
 
@@ -346,6 +346,188 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.homliam.cn/posts/d48fce0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="敲代码的绘图员">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="http://ww1.sinaimg.cn/large/78794689ly1g1hnmn93vzj20u00u0qb3.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Z's Hole">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/posts/d48fce0.html" class="post-title-link" itemprop="url">CAD2020许可过期问题</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-03 14:55:48 / 修改时间：14:57:15" itemprop="dateCreated datePublished" datetime="2019-08-03T14:55:48+08:00">2019-08-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+           
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="post.wordcount">
+                  324 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长&asymp;</span>
+                
+                <span title="post.min2read">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+      
+        
+          
+            <h1 id="关于CAD2020许可超时的解决方法"><a href="#关于CAD2020许可超时的解决方法" class="headerlink" title="关于CAD2020许可超时的解决方法"></a>关于CAD2020许可超时的解决方法</h1><h2 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言<br></h2><p>CAD2020之后的安装破解机制和2019之前是不一样的，在电脑进入休眠状态之后，有可能导致无法唤醒的情况发生，最直接的表现就是打开CAD弹出错误“许可超时”<br><br></p>
+<h2 id="2、查看官方文档"><a href="#2、查看官方文档" class="headerlink" title="2、查看官方文档"></a>2、查看官方文档</h2><p>其实要解决这个问题也很见到，就是在“服务”中启动<code>Autodesk Desktop App Service</code>就可以<br><img src="http://ww1.sinaimg.cn/large/78794689gy1g5mco0qfvuj20ve0gogo2.jpg" alt><br><br>但是事情往往不会这么简单，这一样服务会出现无法启动的错误，只要这个服务没有启动，无论是重装还是怎样，CAD2020都会一直报错。<br><br>官方已经给出了一系列的解决方案，<a href="https://knowledge.autodesk.com/zh-hans/support/autocad/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/Error-1067-when-starting-Autodesk-Desktop-Licensing-Service-manually.html" target="_blank" rel="noopener">点击查看官方文档</a>。</p>
+<h2 id="3、命令行启动服务"><a href="#3、命令行启动服务" class="headerlink" title="3、命令行启动服务"></a>3、命令行启动服务</h2><p>总结一下<a href="https://knowledge.autodesk.com/zh-hans/support/autocad/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/Error-1067-when-starting-Autodesk-Desktop-Licensing-Service-manually.html" target="_blank" rel="noopener">官方文档</a>就是通过命令行来启动服:<br><br><code>&quot;C:\Program Files (x86)\Common Files\Autodesk Shared\AdskLicensing\Current\AdskLicensingService\AdskLicensingService.exe&quot;</code></p>
+<h2 id="4、终极方案"><a href="#4、终极方案" class="headerlink" title="4、终极方案"></a>4、终极方案</h2><p>如果启动<code>Autodesk Desktop App Service</code>服务成功，重新安装CAD2020即可，如果失败就要进行下一步最关键的操作了。<br><br>重点：进入配置文件夹删除<code>AdskLicensingService</code>相关的三个配置文件，配置文件夹位置：<code>C:\ProgramData\Autodesk\AdskLicensingService</code><br><br>然后重新完成上面第三步即可。<br><br><br><br>希望可以帮助到你！</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+  
+<div>
+  
+</div>
+
     
       
 
@@ -1503,12 +1685,12 @@
         
           <p><img src="http://ww1.sinaimg.cn/large/78794689gy1g1gj357cc5j218g0q8790.jpg" alt="远山"></p>
 
-        <div id="aplayer-DJEddzhe" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-xWCvRVcx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-DJEddzhe"),
+            element: document.getElementById("aplayer-xWCvRVcx"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1919,12 +2101,12 @@
       
         
           <p><img src="http://ponc9187g.bkt.clouddn.com/struture.jpg" alt><br>
-        <div id="aplayer-TYPsLBwH" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-HvOmtEom" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-TYPsLBwH"),
+            element: document.getElementById("aplayer-HvOmtEom"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -2232,7 +2414,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2267,8 +2449,6 @@
                     
                   
                     
-                    
-                      
                     
                       
                     
@@ -2413,7 +2593,7 @@
 <!--# 添加博客全站共：-->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">全站共5k字</span>
+  <span class="post-count">全站共5.3k字</span>
 </div>
 </div>
  <!--# 添加Tip:本站电脑访问体验更佳-->
